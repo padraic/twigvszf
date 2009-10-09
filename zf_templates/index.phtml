@@ -6,11 +6,10 @@
   <body>
     <ul id="navigation">
     <? foreach ($this->navigation as $item): ?>
-      <li><a href="<?=$this->escape($item['href'])?>"><?=$this->escape($item['caption'])?></a></li>
+      <li><a href="<?=$item['href']?>"><?=$this->escape($item['caption'])?></a></li>
     <? endforeach; ?>
     </ul>
 
     <h1>My Webpage</h1>
-    <?=$this->escape($this->foo)?>
   </body>
 </html>
