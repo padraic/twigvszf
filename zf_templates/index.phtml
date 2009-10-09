@@ -1,0 +1,16 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html lang="en">
+  <head>
+    <title>My Webpage</title>
+  </head>
+  <body>
+    <ul id="navigation">
+    <? foreach ($this->navigation as $item): ?>
+      <li><a href="<?=$this->escape($item['href'])?>"><?=$this->escape($item['caption'])?></a></li>
+    <? endforeach; ?>
+    </ul>
+
+    <h1>My Webpage</h1>
+    <?=$this->escape($this->foo)?>
+  </body>
+</html>
